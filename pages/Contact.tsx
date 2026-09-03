@@ -16,6 +16,18 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+    
+    // Construct pre-filled email to Reema0alf@gmail.com
+    const subject = encodeURIComponent(`[Portfolio Inquiry] ${formData.serviceInterest} - ${formData.name}`);
+    const body = encodeURIComponent(
+      `الاسم: ${formData.name}\n` +
+      `البريد الإلكتروني: ${formData.email}\n` +
+      `الجهة / الشركة: ${formData.organization || 'غير محدد'}\n` +
+      `مجال الاهتمام: ${formData.serviceInterest}\n\n` +
+      `تفاصيل الرسالة:\n${formData.message}\n`
+    );
+    
+    window.location.href = `mailto:Reema0alf@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
