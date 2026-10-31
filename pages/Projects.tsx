@@ -13,13 +13,14 @@ const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   // Extract unique category keys or strings
-  const categories = ['All', 'Business Intelligence', 'SQL & Database', 'Python & Machine Learning', 'Process Automation', 'Excel & Data Analysis', 'Systems Analysis'];
+  const categories = ['All', 'Business Intelligence', 'SQL & Database', 'Python & Machine Learning', 'Arabic NLP', 'Process Automation', 'Excel & Data Analysis', 'Systems Analysis'];
 
   const getCategoryLabel = (cat: string) => {
-    if (cat === 'All') return isAr ? 'الكل (6)' : 'All (6)';
+    if (cat === 'All') return isAr ? 'الكل (7)' : 'All (7)';
     if (cat === 'Business Intelligence') return isAr ? 'Power BI وذكاء الأعمال' : 'Power BI & BI';
     if (cat === 'SQL & Database') return isAr ? 'تحليل وقواعد بيانات SQL' : 'SQL & Databases';
     if (cat === 'Python & Machine Learning') return isAr ? 'تحليل وتنبؤ Python' : 'Python & Machine Learning';
+    if (cat === 'Arabic NLP') return isAr ? 'معالجة اللغة العربية (NLP)' : 'Arabic NLP';
     if (cat === 'Process Automation') return isAr ? 'أتمتة العمليات' : 'Process Automation';
     if (cat === 'Excel & Data Analysis') return isAr ? 'تحليلات Excel' : 'Excel Analytics';
     if (cat === 'Systems Analysis') return isAr ? 'تحليل النظم وBPMN' : 'Systems & BPMN';

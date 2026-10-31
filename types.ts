@@ -50,6 +50,10 @@ export interface Project {
   fileAttachmentUrl?: string; // Optional: Link to uploaded file / PDF / Sheet / Dashboard
   fileAttachmentLabel?: LocalizedString;
   galleryImages?: string[];
+  cardPill?: LocalizedString;
+  cardDescription?: LocalizedString;
+  cardTags?: string[];
+  pageRoute?: string;
 }
 
 export interface Service {

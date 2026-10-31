@@ -9,6 +9,7 @@ import sqlImg3 from './sql-schema-query.png';
 import ticketAnalyticsImg1 from './eda_category_priority.png';
 import ticketAnalyticsImg2 from './correlation_heatmap.png';
 import ticketAnalyticsImg3 from './prediction_accuracy.png';
+import saudiAppTopicsImg from './Screenshot 2026-10-31 184519.png';
 export const ACADEMIC_COURSES: CourseItem[] = [
   {
     title: { en: 'Google Data Analytics', ar: 'Google Data Analytics' },
@@ -353,6 +354,48 @@ mae = mean_absolute_error(y_test, y_pred)
   galleryImages: [ticketAnalyticsImg1, ticketAnalyticsImg2, ticketAnalyticsImg3],
   featured: true
 },
+{
+  id: '7',
+  title: {
+    en: 'Sentiment and Topic Analysis of Saudi App Reviews',
+    ar: 'تحليل المشاعر والموضوعات لمراجعات التطبيقات السعودية'
+  },
+  category: { en: 'Arabic NLP', ar: 'معالجة اللغة العربية (NLP)' },
+  industry: { en: '', ar: '' },
+  clientType: { en: 'Google Play User Reviews Analysis', ar: 'تحليل مراجعات مستخدمي Google Play' },
+  businessProblem: {
+    en: 'Analyzed 9,000 Google Play reviews of Absher, Tawakkalna and Nafath: compared two sentiment models and turned 8 complaint topics into prioritized requirements.',
+    ar: 'تحليل 9,000 مراجعة على Google Play لتطبيقات أبشر وتوكلنا ونفاذ: مقارنة نموذجين لتحليل المشاعر وتحويل 8 موضوعات شكاوى إلى متطلبات تحسين مرتبة بالأولوية.'
+  },
+  cardDescription: {
+    en: 'Analyzed 9,000 Google Play reviews of Absher, Tawakkalna and Nafath: compared two sentiment models and turned 8 complaint topics into prioritized requirements.',
+    ar: 'تحليل 9,000 مراجعة على Google Play لتطبيقات أبشر وتوكلنا ونفاذ: مقارنة نموذجين لتحليل المشاعر وتحويل 8 موضوعات شكاوى إلى متطلبات تحسين مرتبة بالأولوية.'
+  },
+  cardPill: {
+    en: '9,000 Reviews · 8 Topics',
+    ar: '9,000 مراجعة · 8 موضوعات'
+  },
+  cardTags: ['Python', 'scikit-learn', 'Hugging Face', 'NLP'],
+  approach: {
+    en: 'Normalized Arabic text across 8,561 cleaned reviews, evaluated TF-IDF + Logistic Regression against pre-trained CAMeLBERT on Macro-F1, applied NMF topic modeling on 603 negative reviews, and formalized MoSCoW user stories.',
+    ar: 'تطبيع النصوص العربية عبر 8,561 مراجعة منظفة، وتقييم نموذج TF-IDF + Logistic Regression مقابل نموذج CAMeLBERT المدرب مسبقاً بمقياس Macro-F1، واستخراج الموضوعات عبر NMF، وصياغة المتطلبات بمنهجية MoSCoW.'
+  },
+  architecture: {
+    en: 'Google Play Reviews (9,000) → Arabic Normalization (8,561) → Sentiment Evaluation (TF-IDF + LogReg vs. CAMeLBERT) → NMF Topic Extraction (8 Topics) → MoSCoW Requirements',
+    ar: 'مراجعات Google Play (9,000) ← تطبيع النص العربي (8,561) ← مقارنة نماذج المشاعر (TF-IDF مقابل CAMeLBERT) ← استخراج 8 موضوعات بـ NMF ← متطلبات MoSCoW'
+  },
+  tools: ['Python', 'scikit-learn', 'Hugging Face', 'NLP'],
+  impact: {
+    en: 'Translated 8 complaint topics across 9,000 reviews into prioritized Must/Should/Could engineering requirements focused on core app reliability.',
+    ar: 'تحويل 8 موضوعات شكاوى مستخلصة من 9,000 مراجعة إلى متطلبات تحسين مصنفة بالأولوية (Must / Should / Could) تركز على موثوقية التشغيل.'
+  },
+  metrics: [
+    { kpi: '9,000', label: { en: 'Reviews · 8 Topics', ar: 'مراجعة · 8 موضوعات' } }
+  ],
+  imageUrl: saudiAppTopicsImg,
+  pageRoute: '/projects/saudi-app-reviews',
+  featured: true
+},
 ];
 
 export const SERVICES: Service[] = [
@@ -499,30 +542,60 @@ export const SERVICES: Service[] = [
 export const EXPERIENCE: Experience[] = [
   {
     company: {
-      en: 'Advance Medical',
-      ar: 'أدفانس ميديكال (Advance Medical)'
+      en: 'GNS — National Water Company (NWC) Project',
+      ar: 'شركة GNS — مشروع شركة المياه الوطنية (NWC)'
     },
     role: {
       en: 'Data Analyst',
       ar: 'محللة بيانات (Data Analyst)'
     },
-    period: { en: '12/2024 – Present', ar: '12/2024 – حتى الآن' },
+    period: { en: '2026 – Present', ar: '2026 – حتى الآن' },
     location: { en: 'Riyadh, Saudi Arabia', ar: 'الرياض، المملكة العربية السعودية' },
     description: {
-      en: 'Leading cross-functional data coordination and executive reporting architecture across operations, HR, finance, and senior management.',
+      en: 'Analyzing operational datasets, tracking service KPIs, and building interactive reporting dashboards to support data-driven decision-making within the National Water Company (NWC) project.',
+      ar: 'تحليل البيانات التشغيلية ومتابعة مؤشرات الأداء الرئيسية (KPIs) وبناء لوحات التقارير التفاعلية لدعم اتخاذ القرار المبني على البيانات ضمن مشروع شركة المياه الوطنية (NWC).'
+    },
+    achievements: [
+      {
+        en: 'Analyze project and operational data streams for the NWC engagement, ensuring high data accuracy, consistency, and structured reporting.',
+        ar: 'تحليل ومراجعة البيانات التشغيلية والخدمية ضمن مشروع NWC وضمان دقة وتكامل البيانات في التقارير الدورية.'
+      },
+      {
+        en: 'Develop interactive dashboards and KPI trackers (Power BI / Excel / SQL) to monitor performance benchmarks and SLA compliance.',
+        ar: 'تطوير لوحات تحكم ومؤشرات قياس أداء تفاعلية (Power BI / Excel / SQL) لمتابعة مستويات الإنجاز والالتزام باتفاقيات الخدمة.'
+      },
+      {
+        en: 'Collaborate with technical and project stakeholders to translate operational requirements into clear analytical insights and automated reports.',
+        ar: 'التنسيق مع فرق المشروع وأصحاب المصلحة لتحويل المتطلبات التشغيلية إلى رؤى تحليلية واضحة وتقارير مؤتمتة.'
+      }
+    ]
+  },
+  {
+    company: {
+      en: 'Advance Medical',
+      ar: 'شركة التقدم الطبي (Advance Medical)'
+    },
+    role: {
+      en: 'Data Analyst',
+      ar: 'محللة بيانات (Data Analyst)'
+    },
+    period: { en: '12/2024 – 2026', ar: '12/2024 – 2026' },
+    location: { en: 'Riyadh, Saudi Arabia', ar: 'الرياض، المملكة العربية السعودية' },
+    description: {
+      en: 'Led cross-functional data coordination and executive reporting architecture across operations, HR, finance, and senior management.',
       ar: 'قيادة التنسيق البياني المشترك بين الإدارة والموارد البشرية والمالية والعمليات لدعم اتخاذ القرار التنفيذي ورفع كفاءة العمليات.'
     },
     achievements: [
       {
-        en: 'Lead cross-functional data coordination between management, HR, finance, and operations to support executive decision-making and improve workflow efficiency.',
+        en: 'Led cross-functional data coordination between management, HR, finance, and operations to support executive decision-making and improve workflow efficiency.',
         ar: 'قيادة التنسيق البياني المشترك بين الإدارة العليا والموارد البشرية والمالية والعمليات لدعم القرار التنفيذي ورفع كفاءة تدفق الأعمال.'
       },
       {
-        en: 'Design executive-level dashboards and performance trackers that translate complex data into clear, actionable insights for senior leadership.',
+        en: 'Designed executive-level dashboards and performance trackers that translated complex data into clear, actionable insights for senior leadership.',
         ar: 'تصميم لوحات تحكم ومؤشرات أداء تنفيذية تترجم البيانات المعقدة إلى رؤى واضحة وقابلة للتنفيذ للإدارة العليا.'
       },
       {
-        en: 'Establish data governance and documentation standards to streamline reporting processes, reduce manual effort, and support organizational scalability.',
+        en: 'Established data governance and documentation standards to streamline reporting processes, reduce manual effort, and support organizational scalability.',
         ar: 'تأسيس معايير حوكمة البيانات والتوثيق لتبسيط إجراءات التقارير، تقليص الجهد اليدوي، ودعم التوسع المؤسسي.'
       }
     ]
