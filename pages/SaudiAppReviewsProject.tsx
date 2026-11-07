@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, TrendingUp } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import topicsChartImg from '../Screenshot 2026-10-31 184519.png';
+import topicsChartImg from '../topics_by_app.png';
 import tfidfConfusionImg from '../Screenshot 2026-10-31 184303.png';
 import camelbertConfusionImg from '../Screenshot 2026-10-31 184456.png';
 

@@ -9,7 +9,7 @@ import sqlImg3 from './sql-schema-query.png';
 import ticketAnalyticsImg1 from './eda_category_priority.png';
 import ticketAnalyticsImg2 from './correlation_heatmap.png';
 import ticketAnalyticsImg3 from './prediction_accuracy.png';
-import saudiAppTopicsImg from './Screenshot 2026-10-31 184519.png';
+import saudiAppTopicsImg from './topics_by_app.png';
 export const ACADEMIC_COURSES: CourseItem[] = [
   {
     title: { en: 'Google Data Analytics', ar: 'Google Data Analytics' },
